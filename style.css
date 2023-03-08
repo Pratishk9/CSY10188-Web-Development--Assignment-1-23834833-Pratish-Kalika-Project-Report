@@ -1,0 +1,75 @@
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body
+{
+    height:100vh;
+    width:100vw;
+    background-image: url(./Pictures/viber_image_2022-09-07_15-54-04-496.jpg);
+    background-position: center;
+}
+
+.cuticle
+{
+    height:18vh;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    
+}
+
+.cuticle h1
+{
+    margin-left: 6rem;
+    font-size: 52px;
+    color:whitesmoke;
+}
+span{
+    color:rgb(102, 255, 0);
+}
+
+
+.cuticle li
+{
+    display: inline-block;
+    margin:2rem;
+    text-decoration: none;
+    margin-bottom:18px;
+    margin-left: 5px;
+}
+
+.cuticle li a{
+    text-decoration: none;
+    font-size:22px;
+    color: aliceblue;
+}
+
+
+
+
+
+input[type="checkbox"]
+{
+    display:none;
+}
+
+label[for="hamburger"]
+{
+    display:none;
+}
+@media screen and (max-width: 800px)
+{
+    .blood
+    {
+        display: none;
+    }
+    label[for="hamburger"]
+{
+    display: inline-block;
+    font-size: 25px;
+    margin-right: 2rem;
+}
