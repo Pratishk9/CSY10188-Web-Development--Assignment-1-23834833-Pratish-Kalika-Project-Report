@@ -142,3 +142,40 @@ label[for="hamburger"]
     font-size: 60px;
     margin-right: 2rem;
 }
+}
+
+
+
+
+/* Page of the Contact Page*/
+.frog
+{
+    position:absolute;
+    text-align:center;
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:whitesmoke;
+    text-align:center;
+    width:500px;
+    background:#caa21d ;
+    border-radius:10px;
+    left:65%;
+    margin-top:2%;
+}
+
+input
+{
+    width:35%;
+    border:2px solid;
+    padding:7px 15px;
+    border-radius: 10px;
+}
+
+textarea
+{
+    border:2px solid;
+    resize:none;
+    border-radius: 10px;
+    text-align:center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
