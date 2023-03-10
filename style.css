@@ -1,3 +1,6 @@
+
+
+
 *
 {
     padding:0;
@@ -157,7 +160,7 @@ label[for="hamburger"]
     color:whitesmoke;
     text-align:center;
     width:500px;
-    background:#caa21d ;
+    background:#5c4dae ;
     border-radius:10px;
     left:65%;
     margin-top:2%;
@@ -178,4 +181,14 @@ textarea
     border-radius: 10px;
     text-align:center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button
+{
+    background-color:white;
+    width:80px;
+    padding:5px 20px;
+    border-radius: 10px;
+    cursor:pointer;
+
 }
