@@ -152,7 +152,7 @@ label[for="hamburger"]
 
 
 
-/* Page of the Contact Page*/
+/* Page of the Contact Page starts*/
 .frog
 {
     position:absolute;
@@ -194,4 +194,93 @@ button
     cursor:pointer;
 
 }
+
+/*Contact Page Style Ends*/
+
+/*Portfolio Page Style Starts*/
+
+
+.mobile
+{
+    padding:14px 10%;
+    padding-bottom: 90px;
+}
+.mobile .heading
+{
+    text-align: center;
+    padding-bottom: 13px;
+    color:rgb(191, 255, 0);
+    font-size:65px;
+}
+.mobile .kidney
+{
+   
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,2fr));
+    gap:25px;
+}
+
+.mobile .kidney .lungs
+{
+    background-color: white;
+    box-shadow:0px 8px 19px black;
+    border-radius:15px;
+    text-align:center;
+    padding:25px 15px; 
+}
+
+.mobile .kidney .lungs img
+{
+    height: 200px;
+    width:200px;
+
+}
+.mobile .kidney .lungs h3
+{
+    color:rgb(0, 0, 0);
+    font-size: 21px;
+}
+
+.mobile .kidney .lungs p
+{
+    color:rgb(8, 7, 7);
+    font-size:16px;
+    line-height: 1.8;
+}
+
+.mobile .kidney .lungs .btn
+{
+    margin-top:19px;
+    display:inline-block;
+    background: #3318cc;
+    color:bisque;
+    font-size: 18px;
+    border-radius: 8px;
+    padding:10px 20px;
+    text-decoration: none;
+}
+
+.mobile .kidney .lungs .btn:hover
+{
+    letter-spacing: 2px;
+}
+
+.mobile .kidney .lungs .btn:hover
+{
+    box-shadow: 0px 8px 13px black;
+    transform:scale(1.06);
+}
+
+@media(max-width:768px){
+    .container{
+        padding:19px;
+    }
+   
+}
+
+
+/*Portfolio Page ENDS*/
+
+
+/*Site Report Page Starts*/
 
