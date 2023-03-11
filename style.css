@@ -83,7 +83,7 @@ margin-top: 11rem;
 
 .cell h2
 {
-    font-size:68px;
+    font-size:78px;
     margin-bottom:15px;
     color:transparent;
     -webkit-text-stroke: 1.5px rgb(251, 249, 249);
@@ -110,17 +110,19 @@ margin-top: 11rem;
 .tortoise
 {
     position:absolute;
-    right:4px;
-    bottom:8px;
+    right:650px;
+    bottom:150px;
 }
 
 .tortoise img
 {
-
+    
     width:25px;
-    display:block;
-    margin:35px 7px;
+    margin:30px 7px;
+
 }
+
+
 
 
 
@@ -185,10 +187,11 @@ textarea
 
 button
 {
-    background-color:white;
+    background-color:rgb(208, 223, 39);
     width:80px;
     padding:5px 20px;
     border-radius: 10px;
     cursor:pointer;
 
 }
+
