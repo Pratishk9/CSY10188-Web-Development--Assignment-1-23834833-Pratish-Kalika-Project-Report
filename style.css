@@ -1,5 +1,5 @@
 
-
+/*Index Page Style*/
 
 *
 {
@@ -27,8 +27,8 @@ body
 
 .cuticle h1
 {
-    margin-left: 6rem;
-    font-size: 52px;
+    margin-left: 3rem;
+    font-size: 60px;
     color:whitesmoke;
 }
 .cuticle h1 a
@@ -61,10 +61,18 @@ span{
 
 .cuticle li a:hover
 {
-color:rgb(255, 187, 0);
+    color:rgb(255, 187, 0);
 }
 
-
+.cuticle #hamburger
+{
+    color:whitesmoke;
+    font-size: 3rem;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+    
+}
 
 .cell 
 {
@@ -122,32 +130,48 @@ margin-top: 11rem;
 
 }
 
-
-
-
-
-input[type="checkbox"]
+.buccal
 {
-    display:none;
+    font:15px;
+    color:white;
+    position: fixed;
+    left:1255px;
+    top:695px;
+    
 }
 
-label[for="hamburger"]
+@media screen and (max-width: 1048px)
 {
-    display:none;
-}
-@media screen and (max-width: 800px)
-{
+    body
+    {
+        background-position: 30% 60%;
+    }
+    .cell 
+    {
+        margin-left: 15rem;
+        margin-top: 20rem;
+    }
+    .tortoise
+    {
+       
+        position: absolute;
+        left:500px;
+        bottom:0px;
+    }
     .blood
     {
         display: none;
     }
-    label[for="hamburger"]
-{
-    display: inline-block;
-    font-size: 60px;
-    margin-right: 2rem;
+    
+    .cuticle #hamburger
+    {
+        display: block;
+    }
+
+    
 }
-}
+
+/*Index Page Ends*/
 
 
 
@@ -164,7 +188,7 @@ label[for="hamburger"]
     width:500px;
     background:#5c4dae ;
     border-radius:10px;
-    left:65%;
+    left:30%;
     margin-top:2%;
 }
 
@@ -195,6 +219,21 @@ button
 
 }
 
+@media screen and (max-width: 1048px){
+
+
+.frog
+{
+    position: absolute;
+    left:10%;
+    margin-top:5%;
+
+}
+
+
+}
+
+
 /*Contact Page Style Ends*/
 
 /*Portfolio Page Style Starts*/
@@ -209,7 +248,7 @@ button
 {
     text-align: center;
     padding-bottom: 13px;
-    color:rgb(191, 255, 0);
+    color:rgb(255, 221, 0);
     font-size:65px;
 }
 .mobile .kidney
@@ -271,9 +310,16 @@ button
     transform:scale(1.06);
 }
 
-@media(max-width:768px){
+@media screen and (max-width: 1048px)
+{
+
     .container{
         padding:19px;
+    }
+    
+    .mobile .heading
+    {
+        font-size: 65px;
     }
    
 }
@@ -282,5 +328,9 @@ button
 /*Portfolio Page ENDS*/
 
 
-/*Site Report Page Starts*/
+/*Work Experience Page Starts*/
 
+
+
+
+/*Work Experience Ends*/
