@@ -330,6 +330,77 @@ button
 
 /*Work Experience Page Starts*/
 
+.stigma
+{
+    width: 90%;
+    padding:35px 10px;
+    display: flex;
+   
+}
+
+.cytosome
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-column-gap:20px;
+}
+.choloroplast
+{
+    color:white;
+    padding: 0px 0px 20px 30px;
+}
+
+
+.granules
+{
+    padding: 0px 30px;
+    border-left: 2px solid white;
+}
+
+.myonemes
+{
+    position: relative;
+    padding:20px;
+    border:1px solid black;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 10px;
+}
+
+.myonemes:hover
+{
+    box-shadow: 0px 0px 25px 0px rgb(11, 10, 10);
+    border: 1px solid transparent;
+}
+
+
+.myonemes::before
+{
+    content:'';
+    position: absolute;
+    width: 16px;
+    height:16px;
+    border-radius: 50%;
+    right:calc(100% + 22px);
+    top:0;
+    background-color: rgb(255, 0, 0);
+    border: 2px solid whitesmoke;
+
+}
+
+@media screen and (max-width: 1048px)
+{
+    .cytosome
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .cytosome .pellicle:nth-child(2)
+    {
+        margin-top: 30px;
+    }
+}
 
 
 
