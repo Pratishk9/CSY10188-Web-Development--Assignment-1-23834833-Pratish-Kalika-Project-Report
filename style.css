@@ -16,63 +16,64 @@ body
     background-position: center;
 }
 
+nav
+{
+   
+    text-align: right;
+    height:60px;
+    line-height:70px ;
+    color: black;
+    font-size: 20px;
+}
+
+nav h1 a
+{
+
+    font-size: 45px;
+    float: left;
+    text-decoration: none;
+    color: white;
+}
+
+nav h1 a span
+{
+    color: rgb(55, 255, 0);
+}
+
+
+
+
 .cuticle
 {
-    height:18vh;
-    display:flex;
-    justify-content: space-between;
-    align-items:center;
-    
+    margin: 0px 3px 0px 0px;
+   
 }
 
-.cuticle h1
+.cuticle a
 {
-    margin-left: 3rem;
-    font-size: 60px;
-    color:whitesmoke;
-}
-.cuticle h1 a
-{
-    color:white;
-    text-decoration:none;
-}
-span{
-    color:rgb(102, 255, 0);
+    clear: right;
+    text-decoration: none ;
+    color: rgb(255, 255, 255);
+    margin: 0 10px;
+    line-height: 70px;
+
 }
 
-
-.cuticle li
+label
 {
-    display: inline-block;
-    margin:2rem;
-    text-decoration: none;
-    margin-bottom:18px;
-    margin-left: 5px;
-}
-
-.cuticle li a
-{
-    text-decoration: none;
-    font-size:19px;
-    font-weight:600;
-    color: aliceblue;
-    transition:all 45s.ease;
-}
-
-.cuticle li a:hover
-{
-    color:rgb(255, 187, 0);
-}
-
-.cuticle #hamburger
-{
-    color:whitesmoke;
-    font-size: 3rem;
-    line-height: 80px;
-    cursor: pointer;
+    margin:0px 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
     display: none;
-    
+    width: 26px;
+    float: right;
 }
+
+#toggle
+{
+    display: none;
+}
+
 
 .cell 
 {
@@ -140,12 +141,14 @@ margin-top: 11rem;
     
 }
 
+
 @media screen and (max-width: 1048px)
 {
     body
     {
         background-position: 30% 60%;
     }
+
     .cell 
     {
         margin-left: 15rem;
@@ -153,23 +156,64 @@ margin-top: 11rem;
     }
     .tortoise
     {
-       
+       display: flex;
+       flex-direction: column;
         position: absolute;
         left:500px;
         bottom:0px;
     }
+
     .blood
     {
+        text-align: center; 
+        width: 100%;
         display: none;
     }
+
+@media only screen and (max-width:800px) {
+        label
+        {
+            display: block;
+            cursor: pointer;
+        }
+        .cuticle
+        {
+            text-align: center;
+            background: rgba(83, 75, 75, 0.632);
+            width: 100%;
+            display: none;
     
-    .cuticle #hamburger
-    {
-        display: block;
+        }
+        .cuticle a
+        {
+            display: block;
+            margin: 0;
+        }
+    
+        #toggle:checked+.cuticle{
+            display: block;
+        }
+    
     }
 
     
 }
+
+    
+
+
+
+
+
+   
+    
+
+
+  
+
+
+
+
 
 /*Index Page Ends*/
 
@@ -183,7 +227,7 @@ margin-top: 11rem;
     text-align:center;
     font-size: 18px;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    color:whitesmoke;
+    color:rgb(255, 255, 255);
     text-align:center;
     width:500px;
     background:#5c4dae ;
@@ -332,10 +376,11 @@ button
 
 .stigma
 {
-    width: 90%;
+    width: 95%;
     padding:35px 10px;
     display: flex;
-   
+  
+    
 }
 
 .cytosome
