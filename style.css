@@ -33,6 +33,7 @@ nav h1 a
     float: left;
     text-decoration: none;
     color: white;
+    padding-left: 3rem;
 }
 
 nav h1 a span
@@ -85,7 +86,7 @@ margin-top: 11rem;
 
 .cell h1
 {
-    font-size:30px;
+    font-size:35px;
     color:white;
     margin-bottom: 15px;
 }
@@ -112,15 +113,15 @@ margin-top: 11rem;
 .cell h3
 {
     color:white;
-    font-size:25px;
+    font-size:30px;
 }
 
 
 .tortoise
 {
     position:absolute;
-    right:650px;
-    bottom:150px;
+    right:600px;
+    bottom:210px;
 }
 
 .tortoise img
@@ -156,11 +157,10 @@ margin-top: 11rem;
     }
     .tortoise
     {
-       display: flex;
-       flex-direction: column;
+        display: flex;
         position: absolute;
-        left:500px;
-        bottom:0px;
+        left:30px;
+        top:700px;
     }
 
     .blood
@@ -450,3 +450,27 @@ button
 
 
 /*Work Experience Ends*/
+
+
+/*Site Report Starts*/
+.site
+{
+    padding:15px 8%;
+    padding-bottom: 40px;
+}
+
+.report h1
+{
+    text-align: center;
+    padding-bottom: 12px;
+    color:rgb(217, 255, 0);
+    font-size: 40px;
+}
+
+.report p
+
+{
+    color: aliceblue;
+    font-size: 18px;
+    text-align: center;
+}
