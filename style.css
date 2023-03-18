@@ -7,6 +7,7 @@
     margin:0;
     box-sizing: border-box;
 }
+/*Body Part Style*/
 
 body
 {
@@ -16,64 +17,75 @@ body
     background-position: center;
 }
 
+/*Body Part Style*/
+
+/*Nav Bar Style*/
+
+
 nav
 {
-   
-    text-align: right;
-    height:60px;
-    line-height:70px ;
-    color: black;
-    font-size: 20px;
-}
-
-nav h1 a
-{
-
-    font-size: 45px;
-    float: left;
-    text-decoration: none;
-    color: white;
-    padding-left: 3rem;
-}
-
-nav h1 a span
-{
-    color: rgb(55, 255, 0);
+    background:rgba(4, 1, 1, 0.372);
+    backdrop-filter: blur(2px);
+    height: 80px;
+    width:100%;
 }
 
 
-
-
-.cuticle
+ul li
 {
-    margin: 0px 3px 0px 0px;
-   
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
 }
 
-.cuticle a
+ul
 {
-    clear: right;
-    text-decoration: none ;
-    color: rgb(255, 255, 255);
-    margin: 0 10px;
-    line-height: 70px;
-
-}
-
-label
-{
-    margin:0px 40px 0 0;
-    font-size: 26px;
-    line-height: 70px;
-    display: none;
-    width: 26px;
     float: right;
+    margin-right:55px;
 }
 
-#toggle
+ul li a
+{
+    text-decoration: none;
+    color:white;
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding:7px 13px;
+}
+
+label.logo
+{
+    color:white;
+    font-size: 45px;
+    padding-left: 1rem;
+    line-height: 80px;
+    padding:0 100px;
+}
+
+.chkbtn
+{
+    font-size: 35px;
+    color: aliceblue;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.chkbox
 {
     display: none;
 }
+
+a:hover
+{
+    color:rgb(30, 255, 0);
+}
+
+/*Nav Bar style ends*/
+
+/*Content Style starts*/
 
 
 .cell 
@@ -115,6 +127,9 @@ margin-top: 11rem;
     color:white;
     font-size:30px;
 }
+/*Content Style starts*/
+
+/*Social Media Links Starts*/
 
 
 .tortoise
@@ -128,92 +143,57 @@ margin-top: 11rem;
 {
     
     width:25px;
-    margin:30px 7px;
+    margin:20px 7px;
+    height:25px;
 
 }
 
-.buccal
-{
-    font:15px;
-    color:white;
-    position: fixed;
-    left:1255px;
-    top:695px;
-    
-}
+
+/*Social Media Links Starts*/
 
 
 @media screen and (max-width: 1048px)
 {
-    body
+    label.logo
     {
-        background-position: 30% 60%;
+        font-size: 38px;
+        padding-left: 48px;
+    }
+    nav ul li a
+    {
+        font-size: 16px;
+    }
+    .chkbtn
+    {
+        display: block;
+    }
+    nav ul
+    {
+        position: fixed;
+        width:100%;
+        height:100vh;
+        background-color: black;
+        top:80px;
+        left:-100%;
+        text-align: center;
+        transition: all 0.7s;
+    }
+    nav ul li
+    {
+        display: block;
+        margin:50px 0;
+        line-height: 30px;
     }
 
-    .cell 
+    .chkbox:checked~ul
     {
-        margin-left: 15rem;
-        margin-top: 20rem;
-    }
-    .tortoise
-    {
-        display: flex;
-        position: absolute;
-        left:30px;
-        top:700px;
-    }
-
-    .blood
-    {
-        text-align: center; 
-        width: 100%;
-        display: none;
-    }
-
-@media only screen and (max-width:800px) {
-        label
-        {
-            display: block;
-            cursor: pointer;
-        }
-        .cuticle
-        {
-            text-align: center;
-            background: rgba(83, 75, 75, 0.632);
-            width: 100%;
-            display: none;
-    
-        }
-        .cuticle a
-        {
-            display: block;
-            margin: 0;
-        }
-    
-        #toggle:checked+.cuticle{
-            display: block;
-        }
-    
+        left:0;
     }
 
     
+
+
 }
-
-    
-
-
-
-
-
-   
-    
-
-
-  
-
-
-
-
 
 /*Index Page Ends*/
 
@@ -223,7 +203,7 @@ margin-top: 11rem;
 /* Page of the Contact Page starts*/
 .frog
 {
-    position:absolute;
+    position:fixed;
     text-align:center;
     font-size: 18px;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -268,14 +248,16 @@ button
 
 .frog
 {
+   
     position: absolute;
-    left:10%;
+    left:0%;
     margin-top:5%;
 
 }
 
 
 }
+
 
 
 /*Contact Page Style Ends*/
@@ -378,7 +360,7 @@ button
 {
     width: 95%;
     padding:35px 10px;
-    display: flex;
+   
   
     
 }
@@ -453,6 +435,8 @@ button
 
 
 /*Site Report Starts*/
+
+
 .site
 {
     padding:15px 8%;
@@ -473,4 +457,38 @@ button
     color: aliceblue;
     font-size: 18px;
     text-align: center;
+    padding-bottom: 12px;
+
 }
+
+
+.heading h1
+{
+    text-align: center;
+    color:rgb(217, 255, 0);
+    font-size: 40px;
+    padding-bottom: 12px;
+
+
+}
+
+.gallery
+{
+    position:absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,300px));
+    column-gap: 10px;
+}
+
+img
+{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
